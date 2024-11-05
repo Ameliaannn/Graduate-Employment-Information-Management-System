@@ -1,0 +1,408 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66F1DC8E-8D32-4AF6-A13B-062DFE2B2EE9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>智慧就业信息管理系统</RootNamespace>
+    <AssemblyName>智慧就业信息管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44394</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddApplication.aspx" />
+    <Content Include="AddCompanyMessages.aspx" />
+    <Content Include="AddNewuser.aspx" />
+    <Content Include="AddStudentForm.aspx" />
+    <Content Include="AdminEditApplications.aspx" />
+    <Content Include="AdminEditAPPState.aspx" />
+    <Content Include="ApplicationHistory.aspx" />
+    <Content Include="CompanyAddMessages.aspx" />
+    <Content Include="CompanyInformations.aspx" />
+    <Content Include="CompanyInfoWebPage.aspx" />
+    <Content Include="DetailCompanyInfo.aspx" />
+    <Content Include="DisplayMessages.aspx" />
+    <Content Include="Edituser.aspx" />
+    <Content Include="images2\图片1.jpg" />
+    <Content Include="images2\图片2.jpg" />
+    <Content Include="images2\图片3.jpg" />
+    <Content Include="AdminEditPage.aspx" />
+    <Content Include="AdminMainPage.aspx" />
+    <Content Include="AdminManagePage.aspx" />
+    <Content Include="AdminTop.aspx" />
+    <Content Include="DisplayStudent.aspx" />
+    <Content Include="images\bk2.jpg" />
+    <Content Include="images\图片1.jpg" />
+    <Content Include="images\图片2.jpg" />
+    <Content Include="images\图片3.jpg" />
+    <Content Include="images\图片4.jpg" />
+    <Content Include="images\图片5.jpg" />
+    <Content Include="images\图片6.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="ManageUser.aspx" />
+    <Content Include="MessagesInfoPage.aspx" />
+    <Content Include="resycle.aspx" />
+    <Content Include="StudentAddPage.aspx" />
+    <Content Include="StudentFindJob.aspx" />
+    <Content Include="StudentInfoWebPage.aspx" />
+    <Content Include="StudentMainPage.aspx" />
+    <Content Include="StudentManagePage.aspx" />
+    <Content Include="StudentPage.aspx" />
+    <Content Include="updateuserpassword.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="CompanyManagePage.aspx" />
+    <Content Include="CompanyMainPage.aspx" />
+    <Content Include="CompanyPage.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddApplication.aspx.cs">
+      <DependentUpon>AddApplication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddApplication.aspx.designer.cs">
+      <DependentUpon>AddApplication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddCompanyMessages.aspx.cs">
+      <DependentUpon>AddCompanyMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddCompanyMessages.aspx.designer.cs">
+      <DependentUpon>AddCompanyMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewuser.aspx.cs">
+      <DependentUpon>AddNewuser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewuser.aspx.designer.cs">
+      <DependentUpon>AddNewuser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentForm.aspx.cs">
+      <DependentUpon>AddStudentForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddStudentForm.aspx.designer.cs">
+      <DependentUpon>AddStudentForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditApplications.aspx.cs">
+      <DependentUpon>AdminEditApplications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEditApplications.aspx.designer.cs">
+      <DependentUpon>AdminEditApplications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditAPPState.aspx.cs">
+      <DependentUpon>AdminEditAPPState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEditAPPState.aspx.designer.cs">
+      <DependentUpon>AdminEditAPPState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationHistory.aspx.cs">
+      <DependentUpon>ApplicationHistory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApplicationHistory.aspx.designer.cs">
+      <DependentUpon>ApplicationHistory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyAddMessages.aspx.cs">
+      <DependentUpon>CompanyAddMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyAddMessages.aspx.designer.cs">
+      <DependentUpon>CompanyAddMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInformations.aspx.cs">
+      <DependentUpon>CompanyInformations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInformations.aspx.designer.cs">
+      <DependentUpon>CompanyInformations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyInfoWebPage.aspx.cs">
+      <DependentUpon>CompanyInfoWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyInfoWebPage.aspx.designer.cs">
+      <DependentUpon>CompanyInfoWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetailCompanyInfo.aspx.cs">
+      <DependentUpon>DetailCompanyInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetailCompanyInfo.aspx.designer.cs">
+      <DependentUpon>DetailCompanyInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminEditPage.aspx.cs">
+      <DependentUpon>AdminEditPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminEditPage.aspx.designer.cs">
+      <DependentUpon>AdminEditPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMainPage.aspx.cs">
+      <DependentUpon>AdminMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMainPage.aspx.designer.cs">
+      <DependentUpon>AdminMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminManagePage.aspx.cs">
+      <DependentUpon>AdminManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminManagePage.aspx.designer.cs">
+      <DependentUpon>AdminManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminTop.aspx.cs">
+      <DependentUpon>AdminTop.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminTop.aspx.designer.cs">
+      <DependentUpon>AdminTop.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayMessages.aspx.cs">
+      <DependentUpon>DisplayMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayMessages.aspx.designer.cs">
+      <DependentUpon>DisplayMessages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayStudent.aspx.cs">
+      <DependentUpon>DisplayStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DisplayStudent.aspx.designer.cs">
+      <DependentUpon>DisplayStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edituser.aspx.cs">
+      <DependentUpon>Edituser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edituser.aspx.designer.cs">
+      <DependentUpon>Edituser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUser.aspx.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUser.aspx.designer.cs">
+      <DependentUpon>ManageUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MessagesInfoPage.aspx.cs">
+      <DependentUpon>MessagesInfoPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MessagesInfoPage.aspx.designer.cs">
+      <DependentUpon>MessagesInfoPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resycle.aspx.cs">
+      <DependentUpon>resycle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resycle.aspx.designer.cs">
+      <DependentUpon>resycle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentAddPage.aspx.cs">
+      <DependentUpon>StudentAddPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentAddPage.aspx.designer.cs">
+      <DependentUpon>StudentAddPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentFindJob.aspx.cs">
+      <DependentUpon>StudentFindJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentFindJob.aspx.designer.cs">
+      <DependentUpon>StudentFindJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentInfoWebPage.aspx.cs">
+      <DependentUpon>StudentInfoWebPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentInfoWebPage.aspx.designer.cs">
+      <DependentUpon>StudentInfoWebPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMainPage.aspx.cs">
+      <DependentUpon>StudentMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMainPage.aspx.designer.cs">
+      <DependentUpon>StudentMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentManagePage.aspx.cs">
+      <DependentUpon>StudentManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentManagePage.aspx.designer.cs">
+      <DependentUpon>StudentManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPage.aspx.cs">
+      <DependentUpon>StudentPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPage.aspx.designer.cs">
+      <DependentUpon>StudentPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateuserpassword.aspx.cs">
+      <DependentUpon>updateuserpassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateuserpassword.aspx.designer.cs">
+      <DependentUpon>updateuserpassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyManagePage.aspx.cs">
+      <DependentUpon>CompanyManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyManagePage.aspx.designer.cs">
+      <DependentUpon>CompanyManagePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyMainPage.aspx.cs">
+      <DependentUpon>CompanyMainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyMainPage.aspx.designer.cs">
+      <DependentUpon>CompanyMainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyPage.aspx.cs">
+      <DependentUpon>CompanyPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CompanyPage.aspx.designer.cs">
+      <DependentUpon>CompanyPage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{c1d4ff26-7bea-455b-93cc-2dd010dadb3f}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{cdb70416-043a-4363-8630-baa96231e33d}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WpsApiEx">
+      <Guid>{D626EB73-B7C0-45EF-922D-0CDDAEDE12FA}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64248</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44394/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
